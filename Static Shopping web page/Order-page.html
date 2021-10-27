@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1.0">
+	<title>Final Order</title>
+	<style>
+		body{
+			/*font-family: "Avenir Next";*/
+			font-family: 'Lora', serif;
+			font-weight: bold;
+		}
+		h1{
+			color: blue;
+		}
+		form{
+			margin: 30px;
+			margin-top: 60px;
+			font-size: 20px;
+		}
+		#submission{
+			width: 300px;
+			background-color: #899eab;/*#dee7ec;*/
+			margin-top: 40px;
+			padding: 15px;
+		}
+		#submission:hover{
+			cursor: pointer;
+			background-color: #dee7ec;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<h1>Please fill in the form to place the order</h1>
+		<form method="POST" target="_self">
+			First name : <input type="text" name="fname"><br><br>
+			Last name : <input type="text" name="lname"><br><br>
+			Gender : <input type="radio" name="gender" value="M">Male
+					<input type="radio" name="gender" value="F">Female<br><br>
+			Gmail : <input type="Gmail" name="gmail"><br><br>
+			Phone Number : <input type="text" name="mobile"><br><br>
+			Address : <textarea rows="5" columns="5"></textarea><br><br>
+			<br><br>
+			Number of items: <input type="Number" name="quantity"><br><br><br>
+			<input id="submission" type="submit" title="Click to place the order" onclick="Press()">
+		</form>
+	</center>
+	<script type="text/javascript">
+		function Press() {
+			// body...
+			alert("Successfully placed the order");
+		}
+	</script>
+</body>
+</html>
